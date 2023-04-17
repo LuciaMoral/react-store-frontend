@@ -1,0 +1,51 @@
+.featuredProducts {
+  margin: 100px 200px;
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    h1 {
+      align-self: center;
+      text-transform: capitalize;
+    }
+
+
+  }
+
+  .bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+
+@media (min-width: 574px) {
+
+  .featuredProducts {
+    margin: 30px 30px;
+
+
+    .top {
+      justify-content: center;
+
+
+      h1 {
+        font-size: 1.25rem;
+        padding-right: 25px;
+      }
+
+      p {
+        font-size: 0.75rem;
+        align-items: center;
+      }
+    }
+  }
+
+
+
+}
