@@ -11,7 +11,7 @@ const MobileNavigation = () => {
                         onClick={() => setOpen(!open)}/>
 
   const closeIcon = <CloseOutlinedIcon className='closeIcon'
-                    onClick={() => setOpen(!open)} />
+    onClick={() => setOpen(!open)} />
 
   const closeMobileMenu = () => setOpen(false);
 
