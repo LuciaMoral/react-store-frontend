@@ -15,6 +15,8 @@ const Product = () => {
 
   const dispatch = useDispatch();
   const { data, loading, error } = useFetch(`/products/${id}?populate=*`);
+  console.log('image path check ===', process.env.REACT_APP_UPLOAD_URL +
+    data?.attributes?.img2?.data?.attributes?.url);
 
 
   return (
